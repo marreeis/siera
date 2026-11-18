@@ -21,8 +21,7 @@ comprimir-videos.ps1  comprime os vídeos para menos de 10 MB
 
 | O quê | Onde |
 |---|---|
-| `[SEU WHATSAPP]` (só números, ex.: `5575999999999`) | `app.js` (CONFIG, no topo): é ele que gera todos os links do WhatsApp |
-| `[SEU WHATSAPP]` (como deve aparecer, ex.: `(75) 99999-9999`) | `index.html`: bloco Contato e JSON-LD (`telephone`) |
+| WhatsApp (já configurado: `5573981091204`) | para trocar: `app.js` (CONFIG, no topo), que gera todos os links, e `index.html` (bloco Contato e JSON-LD `telephone`) |
 | `[@SEU PERFIL]` | `index.html`: Contato, rodapé e JSON-LD (`sameAs`). No link, use o perfil sem `@` |
 | `[SEU E-MAIL]` | `index.html`: Contato, rodapé e JSON-LD |
 | `[meudominio.com.br]` | `CNAME`, `robots.txt`, `sitemap.xml` e `index.html` (canonical, og:url, og:image, twitter:image, JSON-LD) |

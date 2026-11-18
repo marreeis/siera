@@ -7,7 +7,7 @@
   /* ---------- CONFIGURAÇÃO: troque aqui ---------- */
   var CONFIG = {
     // Só números, com 55 + DDD + número. Ex.: '5575999999999'
-    whatsapp: '[SEU WHATSAPP]'
+    whatsapp: '5573981091204'
   };
 
   var doc = document.documentElement;
