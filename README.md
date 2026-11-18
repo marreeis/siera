@@ -23,7 +23,7 @@ comprimir-videos.ps1  comprime os vídeos para menos de 10 MB
 |---|---|
 | WhatsApp (já configurado: `5573981091204`) | para trocar: `app.js` (CONFIG, no topo), que gera todos os links, e `index.html` (bloco Contato e JSON-LD `telephone`) |
 | Instagram (já configurado: `@sieraoficial`) | para trocar: `index.html` (Contato, rodapé e JSON-LD `sameAs`) |
-| `[SEU E-MAIL]` | `index.html`: Contato, rodapé e JSON-LD |
+| E-mail (já configurado: `oficialsiera@gmail.com`) | para trocar: `index.html` (Contato, rodapé e JSON-LD `email`) |
 | `[meudominio.com.br]` | `CNAME`, `robots.txt`, `sitemap.xml` e `index.html` (canonical, og:url, og:image, twitter:image, JSON-LD) |
 | `[endereço do site da Oxe]` | `index.html`: barra do navegador do projeto Oxe |
 | `[depoimento]`, `[nome]`, `[empresa]`, `[N]` (iniciais) | `index.html`: seção Depoimentos (3 cartões) |
