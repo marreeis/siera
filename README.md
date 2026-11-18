@@ -26,7 +26,6 @@ comprimir-videos.ps1  comprime os vídeos para menos de 10 MB
 | E-mail (já configurado: `oficialsiera@gmail.com`) | para trocar: `index.html` (Contato, rodapé e JSON-LD `email`) |
 | `[meudominio.com.br]` | `CNAME`, `robots.txt`, `sitemap.xml` e `index.html` (canonical, og:url, og:image, twitter:image, JSON-LD) |
 | `[endereço do site da Oxe]` | `index.html`: barra do navegador do projeto Oxe |
-| `[depoimento]`, `[nome]`, `[empresa]`, `[N]` (iniciais) | `index.html`: seção Depoimentos (3 cartões) |
 | Foto da Mariana | salve como `assets/img/mariana-reis.jpg` (retrato 4:5) |
 | Vídeos | `assets/portfolio/leds-bahia.mp4` (site), `leds-bahia-motion.mp4` (vertical do painel), `painel-led.mp4` |
 | Oxe | `assets/portfolio/oxe.jpg` (imagem) **ou** `assets/portfolio/oxe.mp4` (vídeo) |

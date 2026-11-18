@@ -758,28 +758,6 @@ html.pre [data-hero], html.pre [data-hero-monitor] { opacity: 0; }
 .moldura-cel .video-slot { aspect-ratio: 9 / 19; }
 
 /* =========================================================
-   DEPOIMENTOS
-   ========================================================= */
-.depoimentos { padding-top: 0; }
-.depoimentos__grade { display: grid; gap: 18px; grid-template-columns: 1fr; }
-@media (min-width: 860px) { .depoimentos__grade { grid-template-columns: repeat(3, 1fr); } }
-.depo {
-  background: var(--branco); border-radius: var(--raio); padding: 30px 28px;
-  display: flex; flex-direction: column; gap: 18px; border: 1px solid rgba(74, 14, 37, .07);
-}
-.depo__aspas { font-family: var(--f-titulo); font-weight: 800; font-size: 4.5rem; line-height: .6; color: var(--lilas); height: 34px; }
-.depo blockquote { margin: 0; font-size: 1.08rem; color: var(--tinta); flex: 1; }
-.depo blockquote p { margin: 0; }
-.depo figcaption { display: flex; align-items: center; gap: 12px; padding-top: 18px; border-top: 1px solid var(--linha); }
-.depo figcaption > span:last-child { display: flex; flex-direction: column; line-height: 1.3; }
-.depo strong { font-family: var(--f-titulo); color: var(--bordo); }
-.depo small { color: var(--cinza); font-size: .85rem; }
-.depo__avatar {
-  width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
-  background: var(--bege); color: var(--bordo); font-weight: 700; font-size: .75rem;
-}
-
-/* =========================================================
    CONTATO
    ========================================================= */
 .contato { padding-top: 0; }
