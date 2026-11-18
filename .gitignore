@@ -10,3 +10,7 @@ assets/portfolio/originais/
 # motions: dependências e vídeos gerados
 motions/node_modules/
 motions/saida/
+motions/**/*.mp4
+motions/**/previa/
+motions/**/previa-16x9/
+motions/**/trecho.mp4

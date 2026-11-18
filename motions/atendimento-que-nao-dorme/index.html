@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atendimento que não dorme · siera</title>
+  <link rel="icon" href="../comum/midia/logo-siera.png">
+  <link rel="stylesheet" href="../comum/base.css">
+  <link rel="stylesheet" href="cena.css">
+</head>
+<body>
+
+<div class="palco" id="palco">
+
+  <!-- Fundo creme com brilho lilás -->
+  <div class="camada fundo"><div class="brilho" id="brilho"></div></div>
+
+  <!-- 2–5s · Título -->
+  <div class="camada c2">
+    <div class="titulo-bloco" id="tituloBloco">
+      <span class="rotulo" id="rotulo">
+        <svg class="estrela" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+        Atendimento online
+      </span>
+      <h1 class="titulo">
+        <span class="linha"><span class="palavra">Atendimento</span></span>
+        <span class="linha"><span class="palavra">que</span></span>
+        <span class="linha linha--bordo"><span class="marca-texto" id="marcaTexto"><span class="palavra">não</span> <span class="palavra">dorme<span class="ponto">.</span></span></span></span>
+      </h1>
+    </div>
+  </div>
+
+  <!-- 5–10s · Celular com o chat -->
+  <div class="camada c3">
+    <div class="cel" id="cel">
+      <div class="moldura-cel">
+        <div class="moldura-cel__tela">
+          <div class="barra-status">
+            <span class="barra-status__hora" id="hora">03:12</span>
+            <span class="barra-status__icones" id="icones">
+              <svg viewBox="0 0 34 22" class="sinal"><rect x="0" y="15" width="6" height="7" rx="1.5"/><rect x="9" y="10" width="6" height="12" rx="1.5"/><rect x="18" y="5" width="6" height="17" rx="1.5"/><rect x="27" y="0" width="6" height="22" rx="1.5"/></svg>
+              <svg viewBox="0 0 50 24" class="bateria"><rect x="1" y="1" width="42" height="22" rx="6" fill="none" stroke="currentColor" stroke-width="2" opacity=".45"/><rect x="5" y="5" width="28" height="14" rx="3"/><rect x="45" y="8" width="4" height="8" rx="2" opacity=".45"/></svg>
+            </span>
+          </div>
+
+          <div class="chat__topo">
+            <span class="chat__avatar">S</span>
+            <div class="chat__quem">
+              <strong>Atendimento siera</strong>
+              <span class="chat__status"><i></i>
+                <span class="status-troca"><span id="statusOnline">online agora</span><span id="statusDigitando">digitando…</span></span>
+              </span>
+            </div>
+            <svg class="estrela chat__estrela" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+          </div>
+
+          <div class="chat__mensagens">
+            <span class="chat__dia" id="dia">Domingo</span>
+            <div class="msg msg--cliente" id="msgCliente">Ainda dá para agendar?<span class="msg__hora">03:12</span></div>
+            <div class="digitando-slot">
+              <div class="msg msg--agente msg--digitando" id="digitando"><i></i><i></i><i></i></div>
+              <div class="msg msg--agente" id="msgAgente"><small>Atendimento siera</small>Dá sim! Tenho amanhã às 9h ou às 10h30. Qual prefere?<span class="msg__hora">03:12</span></div>
+            </div>
+            <div class="rapidas" id="rapidas">
+              <span class="chip">9h</span>
+              <span class="chip" id="chipEscolhido">10h30</span>
+            </div>
+          </div>
+
+          <div class="chat__entrada">
+            <span class="entrada-texto"><span id="entradaVazia">Mensagem…</span><span id="entradaDigitada"></span></span>
+            <span class="chat__enviar" id="enviar"><svg viewBox="0 0 24 24"><path d="M3 20.5 21 12 3 3.5v6.6l12 1.9-12 1.9v6.6Z"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 0–2s · Logo digitada (depois vira a marca no topo) -->
+  <div class="logo-palco" id="logoPalco">
+    <img class="logo-palco__marca" id="logoMarca" src="../comum/midia/logo-siera.png" alt="" width="1039" height="353">
+    <img class="logo-palco__slogan" id="logoSlogan" src="../comum/midia/logo-siera.png" alt="" width="1039" height="353">
+    <span class="logo-palco__cursor" id="cursor"></span>
+  </div>
+
+  <!-- 10–13s · Fita em "S" + frase. O texto vira creme onde a fita passa. -->
+  <svg class="camada c4" id="c4" viewBox="0 0 1080 1920" aria-hidden="true">
+    <defs>
+      <mask id="mascaraFita" maskUnits="userSpaceOnUse" x="-2000" y="-2000" width="5080" height="5920">
+        <path class="fita-s" d="M1220 300 C 860 90, 110 250, 170 640 C 230 1010, 910 860, 910 1260 C 910 1660, 330 1720, -180 1580" stroke="#fff" />
+      </mask>
+    </defs>
+    <g class="frase">
+      <rect class="frase__marca" id="fraseMarca" />
+      <text class="l1" x="540" y="850">Sem folga<tspan class="ponto" dx="-9">.</tspan></text>
+      <text class="l2" x="540" y="1000">Sem férias<tspan class="ponto" dx="-9">.</tspan></text>
+      <text class="l3 frase__bordo" x="540" y="1150">A qualquer hora<tspan class="ponto" dx="-9">.</tspan></text>
+    </g>
+    <path class="fita-s fita-s--visivel" d="M1220 300 C 860 90, 110 250, 170 640 C 230 1010, 910 860, 910 1260 C 910 1660, 330 1720, -180 1580" />
+    <g class="frase frase--creme" mask="url(#mascaraFita)">
+      <text class="l1" x="540" y="850">Sem folga<tspan class="ponto" dx="-9">.</tspan></text>
+      <text class="l2" x="540" y="1000">Sem férias<tspan class="ponto" dx="-9">.</tspan></text>
+      <text class="l3" x="540" y="1150">A qualquer hora<tspan class="ponto" dx="-9">.</tspan></text>
+    </g>
+  </svg>
+
+  <!-- 13–15s · Fechamento bordô -->
+  <div class="camada c5" id="c5">
+    <div class="c5__fundo" id="c5Fundo"></div>
+    <svg class="fita c5__fita" viewBox="0 0 1080 1920" aria-hidden="true">
+      <path id="fitaFinal" d="M1240 1500 C 900 1560, 700 1180, 980 1000 C 1220 840, 160 600, 380 300 C 520 110, 220 -40, -160 120" />
+    </svg>
+    <div class="final">
+      <svg class="estrela final__estrela" id="finalEstrela" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+      <img class="final__logo" id="finalLogo" src="../comum/midia/logo-siera-creme.png" alt="siera, Comunicação e Marketing" width="1039" height="353">
+      <p class="final__slogan">
+        <span class="linha"><span class="palavra slogan-l">O que a sua</span></span>
+        <span class="linha"><span class="palavra slogan-l">empresa será,</span></span>
+        <span class="linha"><span class="palavra slogan-l"><span class="marca-texto marca-texto--lilas" id="sloganMarca">a gente constrói.</span></span></span>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="controles" id="controles">
+  <button type="button" id="btReiniciar">↺ Reiniciar</button>
+  <button type="button" class="sec" id="btTocar">Pausar</button>
+  <input type="range" id="barra" min="0" max="15" step="0.001" value="0" aria-label="Posição no tempo">
+  <output id="tempo">0.00s</output>
+</div>
+
+<script src="../comum/gsap.min.js"></script>
+<script src="timeline.js"></script>
+<script src="../comum/player.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* =========================================================
+   Atendimento que não dorme · 1080x1920
+   ========================================================= */
+
+/* ---------- Fundo ---------- */
+.fundo { background: var(--creme); overflow: hidden; }
+.brilho {
+  position: absolute; left: -40%; top: -30%; width: 180%; height: 160%;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(211, 182, 210, .42), transparent 30%),
+    radial-gradient(circle at 18% 78%, rgba(211, 182, 210, .30), transparent 32%);
+}
+
+/* ---------- 0–2s · Logo digitada ---------- */
+.logo-palco {
+  position: absolute; left: 160px; top: 831px;
+  width: 760px; aspect-ratio: 1039 / 353;
+  transform-origin: 0 0;
+}
+.logo-palco__marca, .logo-palco__slogan { position: absolute; inset: 0; width: 100%; height: 100%; }
+.logo-palco__marca { clip-path: inset(0 100% 24.08% 0); }
+.logo-palco__slogan { clip-path: inset(84.14% 0 0 0); opacity: 0; }
+.logo-palco__cursor {
+  position: absolute; left: 0; top: 13%; height: 63%;
+  width: 7px; margin-left: 1.2%;
+  background: var(--bordo); border-radius: 3px;
+}
+
+/* ---------- 2–5s · Título ---------- */
+.titulo-bloco { position: absolute; left: 90px; right: 90px; top: 690px; }
+.titulo-bloco .rotulo { margin-bottom: 44px; }
+.titulo {
+  margin: 0;
+  font-family: var(--f-titulo); font-weight: 800;
+  font-size: 150px; line-height: .98; letter-spacing: -0.045em;
+  color: var(--tinta);
+}
+.linha { display: block; width: max-content; }
+.palavra { display: inline-block; will-change: transform, filter; }
+.linha--bordo { color: var(--bordo); }
+.ponto { margin-left: -0.07em; } /* o ponto da Jakarta 800 fica solto em tamanho grande */
+
+/* ---------- 5–10s · Celular ---------- */
+.c3 { perspective: 2400px; }
+.cel { position: absolute; left: 190px; top: 300px; width: 700px; height: 1440px; transform-origin: 50% 100%; }
+.cel .moldura-cel { height: 100%; }
+
+.barra-status {
+  position: relative; z-index: 2; flex: none;
+  height: 104px; padding: 18px 64px 0 76px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: #FBF7F5; color: var(--tinta);
+}
+.barra-status__hora {
+  display: inline-block; transform-origin: 0 50%;
+  font-family: var(--f-texto); font-weight: 600; font-size: 38px; letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+.barra-status__icones { display: inline-flex; align-items: center; gap: 14px; }
+.barra-status__icones svg { height: 26px; width: auto; fill: currentColor; }
+
+.chat__mensagens { justify-content: flex-start; }
+.chat__dia {
+  align-self: center; margin-bottom: 8px;
+  font-size: 24px; font-weight: 600; letter-spacing: .06em; color: var(--cinza);
+  background: var(--branco); padding: 8px 24px; border-radius: 999px;
+}
+.status-troca { display: inline-grid; }
+.status-troca > span { grid-area: 1 / 1; }
+#statusDigitando { opacity: 0; }
+
+.digitando-slot { display: grid; }
+.digitando-slot > * { grid-area: 1 / 1; }
+.digitando-slot .msg--digitando { align-self: start; justify-self: start; }
+.digitando-slot #msgAgente { justify-self: start; }
+
+.rapidas { display: flex; gap: 14px; margin-top: 6px; }
+.rapidas .chip { padding: 16px 34px; font-size: 30px; }
+
+.entrada-texto { display: inline-grid; min-width: 0; }
+.entrada-texto > span { grid-area: 1 / 1; white-space: nowrap; }
+#entradaDigitada { color: var(--tinta); }
+
+/* ---------- 10–13s · Fita em "S" e frase ---------- */
+.c4 { width: 1080px; height: 1920px; overflow: visible; }
+.c4 .fita-s { fill: none; stroke-width: 120; stroke-linecap: round; }
+.c4 .fita-s--visivel { stroke: var(--bordo); }
+.frase text {
+  font-family: var(--f-titulo); font-weight: 800; font-size: 130px; letter-spacing: -0.045em;
+  text-anchor: middle; fill: var(--tinta);
+}
+.frase .frase__bordo { fill: var(--bordo); }
+.frase__marca { fill: var(--lilas); }
+.frase--creme text { fill: var(--creme); }
+
+/* ---------- 13–15s · Fechamento ---------- */
+.c5 { pointer-events: none; }
+.c5__fundo { position: absolute; inset: 0; background: var(--bordo); opacity: 0; }
+.c5__fita { inset: 0; width: 100%; height: 100%; }
+.c5__fita path { stroke: var(--bordo-escuro); stroke-width: 70; }
+.final {
+  position: absolute; left: 0; right: 0; top: 560px;
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+}
+.final__estrela { width: 84px; height: 84px; margin-bottom: 64px; }
+.final__logo { width: 620px; height: auto; }
+.final__slogan {
+  margin: 110px 0 0; color: var(--creme);
+  font-family: var(--f-titulo); font-weight: 800;
+  font-size: 96px; line-height: 1.04; letter-spacing: -0.045em;
+}
+.final__slogan .linha { white-space: nowrap; margin-inline: auto; }

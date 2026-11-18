@@ -1,0 +1,13 @@
+{
+  "name": "siera-motions",
+  "private": true,
+  "type": "module",
+  "description": "Motions da siera em HTML + CSS + GSAP, gravados em MP4 com Playwright + ffmpeg",
+  "scripts": {
+    "previa": "node servidor.mjs",
+    "gravar": "node gravar.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.49.1"
+  }
+}
