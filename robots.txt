@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://[meudominio.com.br]/sitemap.xml
+Sitemap: https://sieraoficial.com.br/sitemap.xml

@@ -24,7 +24,7 @@ comprimir-videos.ps1  comprime os vídeos para menos de 10 MB
 | WhatsApp (já configurado: `5573981091204`) | para trocar: `app.js` (CONFIG, no topo), que gera todos os links, e `index.html` (bloco Contato e JSON-LD `telephone`) |
 | Instagram (já configurado: `@sieraoficial`) | para trocar: `index.html` (Contato, rodapé e JSON-LD `sameAs`) |
 | E-mail (já configurado: `oficialsiera@gmail.com`) | para trocar: `index.html` (Contato, rodapé e JSON-LD `email`) |
-| `[meudominio.com.br]` | `CNAME`, `robots.txt`, `sitemap.xml` e `index.html` (canonical, og:url, og:image, twitter:image, JSON-LD) |
+| Domínio (já configurado: `sieraoficial.com.br`) | para trocar: `CNAME`, `robots.txt`, `sitemap.xml` e `index.html` (canonical, og:url, og:image, twitter:image, JSON-LD) |
 | `[endereço do site da Oxe]` | `index.html`: barra do navegador do projeto Oxe |
 | Foto da Mariana | salve como `assets/img/mariana-reis.jpg` (retrato 4:5) |
 | Vídeos | `assets/portfolio/leds-bahia.mp4` (site), `leds-bahia-motion.mp4` (vertical do painel), `painel-led.mp4` |
@@ -61,4 +61,4 @@ Em **Custom domain**, informe o seu domínio e marque **Enforce HTTPS** quando l
 
 DNS do domínio (no registro.br ou onde estiver):
 - 4 registros `A` para `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-- 1 registro `CNAME` para `www` apontando para `SEU-USUARIO.github.io`
+- 1 registro `CNAME` para `www` apontando para `marreeis.github.io`
