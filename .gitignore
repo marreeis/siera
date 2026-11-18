@@ -1,0 +1,10 @@
+# CNAME fica fora até existir um domínio real (com o placeholder, o GitHub Pages quebra)
+CNAME
+desktop.ini
+Thumbs.db
+.DS_Store
+# arquivos de trabalho que não fazem parte do site
+assets/abertura.mp4
+assets/apesentacao-siera.pdf
+# vídeos brutos (antes de comprimir) não vão para o GitHub
+assets/portfolio/originais/

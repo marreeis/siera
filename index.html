@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>siera | Comunicação e Marketing com IA, sites e motion · Baixo Sul da Bahia</title>
+  <meta name="description" content="A siera une estratégia de comunicação e marketing com automação no WhatsApp, sites de alta conversão e motion design. Agência no Baixo Sul da Bahia, fundada por Mariana Reis.">
+  <meta name="theme-color" content="#4A0E25">
+  <meta name="robots" content="index, follow">
+  <!-- [PLACEHOLDER] troque [meudominio.com.br] pelo seu domínio -->
+  <link rel="canonical" href="https://[meudominio.com.br]/">
+
+  <!-- Open Graph / redes sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="siera | Comunicação e Marketing">
+  <meta property="og:title" content="siera | O que a sua empresa será, a gente constrói.">
+  <meta property="og:description" content="Estratégia de comunicação e marketing com automação no WhatsApp, sites de alta conversão e motion design. Baixo Sul da Bahia.">
+  <meta property="og:url" content="https://[meudominio.com.br]/">
+  <meta property="og:image" content="https://[meudominio.com.br]/assets/img/og-siera.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo da siera, Comunicação e Marketing">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="siera | Comunicação e Marketing">
+  <meta name="twitter:description" content="Automação no WhatsApp, sites de alta conversão e motion design com estratégia.">
+  <meta name="twitter:image" content="https://[meudominio.com.br]/assets/img/og-siera.png">
+
+  <!-- Ícones feitos a partir da logo -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/logo-siera.png">
+  <link rel="stylesheet" href="estilo.css">
+
+  <!-- Abertura: só na primeira visita da sessão e sem "reduzir movimento" -->
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!reduz) {
+          d.classList.add('pre');
+          setTimeout(function () { d.classList.remove('pre'); }, 4000);
+        }
+        if (!reduz && !sessionStorage.getItem('siera-intro')) {
+          d.classList.add('intro');
+          // segurança: se algo falhar, a abertura some sozinha
+          setTimeout(function () { d.classList.remove('intro'); }, 7000);
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "siera | Comunicação e Marketing",
+    "alternateName": "siera",
+    "description": "Estratégia de comunicação e marketing com automação no WhatsApp, sites e landing pages de alta conversão e motion design.",
+    "url": "https://[meudominio.com.br]/",
+    "logo": "https://[meudominio.com.br]/assets/img/logo-siera.png",
+    "image": "https://[meudominio.com.br]/assets/img/og-siera.png",
+    "telephone": "[SEU WHATSAPP]",
+    "email": "[SEU E-MAIL]",
+    "founder": { "@type": "Person", "name": "Mariana Reis" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "BA",
+      "addressCountry": "BR",
+      "addressLocality": "Baixo Sul da Bahia"
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Baixo Sul da Bahia" },
+      { "@type": "State", "name": "Bahia" },
+      { "@type": "Country", "name": "Brasil" }
+    ],
+    "sameAs": ["https://instagram.com/[@SEU PERFIL]"],
+    "knowsAbout": ["Automação no WhatsApp", "Atendimento automático", "Sites", "Landing pages", "Motion design", "Marketing", "Comunicação"]
+  }
+  </script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============ ABERTURA (digitação na logo) ============ -->
+  <div class="abertura" id="abertura">
+    <div class="abertura__palco" id="aberturaPalco" aria-hidden="true">
+      <img class="abertura__marca" id="aberturaMarca" src="assets/img/logo-siera.png" alt="" width="1039" height="353">
+      <img class="abertura__slogan" id="aberturaSlogan" src="assets/img/logo-siera.png" alt="" width="1039" height="353">
+      <span class="abertura__cursor" id="aberturaCursor"></span>
+    </div>
+    <button class="abertura__pular" id="aberturaPular" type="button">Pular abertura</button>
+  </div>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="topo" id="topo">
+    <div class="topo__inner">
+      <a class="marca" href="#inicio" aria-label="siera, Comunicação e Marketing: voltar ao início">
+        <span class="marca__recorte" id="marcaTopo">
+          <img src="assets/img/logo-siera.png" alt="siera" width="1039" height="353">
+        </span>
+      </a>
+
+      <nav class="menu" id="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a class="botao botao--bordo botao--pequeno topo__cta" data-wa="Olá, siera! Vim pelo site e quero conversar sobre a minha empresa." href="#contato">Falar com a siera</a>
+
+      <button class="menu-botao" id="menuBotao" type="button" aria-expanded="false" aria-controls="menuMovel">
+        <span class="sr">Abrir menu</span>
+        <span class="menu-botao__linhas" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="menu-movel" id="menuMovel" hidden>
+      <nav aria-label="Menu do celular">
+        <ul>
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a class="botao botao--bordo" data-wa="Olá, siera! Vim pelo site e quero conversar sobre a minha empresa." href="#contato">Falar com a siera</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <svg class="fita fita--hero" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path d="M1500 40 C 1380 60, 1330 160, 1360 300 C 1390 440, 1200 520, 1000 600 C 820 670, 780 760, 760 920" />
+      </svg>
+
+      <div class="hero__grade conteiner">
+        <div class="hero__texto">
+          <p class="rotulo hero__rotulo" data-hero>
+            <svg class="estrela" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+            Comunicação · Marketing · IA · Motion
+          </p>
+          <h1 class="hero__titulo" id="hero-titulo" data-hero>
+            O que a sua empresa será,<br>
+            <span class="hero__linha2 marca-texto">a gente constrói.</span>
+          </h1>
+          <p class="hero__sub" data-hero>
+            Unimos estratégia de comunicação e marketing com automação no WhatsApp, sites de alta conversão e motion design para transformar visitantes em clientes todos os dias.
+          </p>
+          <div class="hero__acoes" data-hero>
+            <a class="botao botao--bordo" data-wa="Olá, siera! Vim pelo site e quero conversar sobre a minha empresa." href="#contato">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+              Falar com a siera
+            </a>
+            <a class="botao botao--contorno" href="#portfolio">Ver portfólio</a>
+          </div>
+        </div>
+
+        <!-- Mockup do monitor com o Atendimento Online -->
+        <div class="hero__monitor" data-hero-monitor>
+          <div class="monitor" id="monitor">
+            <div class="monitor__tela">
+              <div class="chat" id="chat" role="region" aria-label="Demonstração do Atendimento Online da siera">
+                <div class="chat__topo">
+                  <span class="chat__avatar" aria-hidden="true">S</span>
+                  <div class="chat__quem">
+                    <strong>Atendimento Online · siera</strong>
+                    <span class="chat__status"><i aria-hidden="true"></i> <span id="chatStatus">online agora</span></span>
+                  </div>
+                  <svg class="estrela chat__estrela" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+                </div>
+                <div class="chat__mensagens" id="chatMensagens" role="log" aria-live="polite" aria-relevant="additions"></div>
+                <div class="chat__rapidas" id="chatRapidas" aria-label="Perguntas rápidas">
+                  <button type="button" class="chip" data-pergunta="preco">Quanto custa um site?</button>
+                  <button type="button" class="chip" data-pergunta="ia">Como funciona o atendimento automático no WhatsApp?</button>
+                  <a class="chip chip--wa" data-pergunta="mariana" data-wa="Olá, Mariana! Vim pelo site da siera e quero conversar." href="#contato" target="_blank" rel="noopener">Quero falar com a Mariana</a>
+                </div>
+                <div class="chat__entrada" aria-hidden="true">
+                  <span>Escolha uma pergunta acima…</span>
+                  <span class="chat__enviar"><svg viewBox="0 0 24 24"><path d="M3 20.5 21 12 3 3.5v6.6l12 1.9-12 1.9v6.6Z"/></svg></span>
+                </div>
+              </div>
+            </div>
+            <div class="monitor__queixo" aria-hidden="true"><span></span></div>
+            <div class="monitor__pe" aria-hidden="true"></div>
+          </div>
+          <p class="hero__aviso">Demonstração ilustrativa com respostas roteirizadas.</p>
+        </div>
+      </div>
+
+      <a class="hero__rolar" href="#quem-somos" aria-label="Rolar para a próxima seção">
+        <span>Role para continuar</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ============ QUEM SOMOS ============ -->
+    <section class="secao quem" id="quem-somos" aria-labelledby="quem-titulo">
+      <div class="conteiner quem__grade">
+        <figure class="quem__foto" data-revela>
+          <div class="foto-moldura" data-img="assets/img/mariana-reis.jpg" data-img-alt="Mariana Reis, fundadora da siera">
+            <div class="placeholder">
+              <span class="placeholder__tag">[PLACEHOLDER]</span>
+              <span>Foto da Mariana Reis</span>
+              <small>assets/img/mariana-reis.jpg</small>
+            </div>
+          </div>
+          <figcaption>
+            <strong>Mariana Reis</strong>
+            <span>Fundadora da siera</span>
+          </figcaption>
+          <svg class="estrela quem__estrela" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+        </figure>
+
+        <div class="quem__texto">
+          <p class="rotulo" data-revela>01 // Quem somos</p>
+          <h2 class="titulo-secao" id="quem-titulo" data-revela>
+            Experiência em comunicação com as ferramentas <span class="marca-texto">mais modernas</span> do mercado.
+          </h2>
+          <p class="texto-grande" data-revela>
+            A siera une a experiência em comunicação e marketing da Mariana Reis, fundadora, com as ferramentas mais modernas de inteligência artificial e design em movimento.
+          </p>
+          <p data-revela>
+            Criamos a partir do Baixo Sul da Bahia, perto de quem a gente atende, para marcas que querem ser lembradas e que precisam vender todos os dias. Estratégia vem primeiro. A tecnologia entra para fazer essa estratégia trabalhar por você.
+          </p>
+          <ul class="quem__pilares" data-revela>
+            <li><span>Estratégia</span> que dá direção</li>
+            <li><span>Inteligência artificial</span> que atende</li>
+            <li><span>Movimento</span> que prende o olhar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOLUÇÕES (bento) ============ -->
+    <section class="secao solucoes" id="solucoes" aria-labelledby="solucoes-titulo">
+      <div class="conteiner">
+        <div class="cabeca-secao">
+          <p class="rotulo" data-revela>02 // Soluções</p>
+          <h2 class="titulo-secao" id="solucoes-titulo" data-revela>Três pilares e <span class="marca-texto">uma base</span> que conecta tudo.</h2>
+        </div>
+
+        <div class="bento">
+          <!-- 1. Automação no WhatsApp -->
+          <article class="cartao cartao--ia" data-revela>
+            <div class="cartao__cabeca">
+              <span class="cartao__num">01</span>
+              <h3>Automação no WhatsApp</h3>
+            </div>
+            <p>Atendimento 24/7, respostas em segundos e uma automação que entende áudio, qualifica o cliente, agenda e lembra do compromisso. Soluções sob medida para clínicas, mobilidade e negócios locais.</p>
+
+            <div class="ia-demo">
+              <div class="abas" role="tablist" aria-label="Exemplos por tipo de negócio">
+                <button role="tab" id="aba-clinicas" aria-selected="true" aria-controls="painel-ia" data-segmento="clinicas" type="button">Clínicas</button>
+                <button role="tab" id="aba-mobilidade" aria-selected="false" aria-controls="painel-ia" data-segmento="mobilidade" type="button" tabindex="-1">Mobilidade</button>
+                <button role="tab" id="aba-locais" aria-selected="false" aria-controls="painel-ia" data-segmento="locais" type="button" tabindex="-1">Negócios locais</button>
+              </div>
+              <div class="ia-demo__topo" aria-hidden="true">
+                <span class="ia-demo__avatar">E</span>
+                <div><strong>WhatsApp da sua empresa</strong><small>Atendimento automático · online</small></div>
+              </div>
+              <div class="ia-demo__painel" id="painel-ia" role="tabpanel" aria-labelledby="aba-clinicas" tabindex="0">
+                <p class="ia-demo__hora" id="iaHora">Domingo, 03:12</p>
+                <div class="ia-demo__conversa" id="iaConversa">
+                  <div class="balao balao--cliente"><span class="balao__audio" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span> <span>Áudio: “Tem horário pra quinta de manhã?”</span></div>
+                  <div class="balao balao--agente">Tenho sim! Quinta às 9h ou às 10h30. Qual prefere?</div>
+                  <div class="balao balao--cliente">10h30, por favor.</div>
+                  <div class="balao balao--agente">Prontinho, agendado para quinta às 10h30. Te mando um lembrete na véspera.</div>
+                </div>
+              </div>
+              <ul class="ia-demo__tags" aria-label="O que a automação faz">
+                <li>Entende áudio</li><li>Qualifica</li><li>Agenda</li><li>Lembra</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 2. Sites -->
+          <article class="cartao cartao--sites" data-revela>
+            <div class="cartao__cabeca">
+              <span class="cartao__num">02</span>
+              <h3>Sites e landing pages cinematográficas</h3>
+            </div>
+            <p>Ultra-rápidos, responsivos e com animações fluidas. Feitos para gerar autoridade e conversão.</p>
+            <div class="sites-demo">
+              <div class="alternar" role="group" aria-label="Ver o site em">
+                <button type="button" aria-pressed="true" data-tela="desktop">Computador</button>
+                <button type="button" aria-pressed="false" data-tela="celular">Celular</button>
+              </div>
+              <div class="sites-demo__palco">
+                <div class="mini-site" id="miniSite" aria-hidden="true">
+                  <div class="mini-site__barra"><i></i><i></i><i></i></div>
+                  <div class="mini-site__corpo">
+                    <span class="l l--titulo"></span>
+                    <span class="l l--titulo l--curta"></span>
+                    <span class="l"></span>
+                    <span class="mini-site__botao"></span>
+                    <div class="mini-site__blocos"><span></span><span></span><span></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Motion -->
+          <article class="cartao cartao--motion" data-revela>
+            <div class="cartao__cabeca">
+              <span class="cartao__num">03</span>
+              <h3>Motion design e conteúdo visual</h3>
+            </div>
+            <p>Vídeos animados, vinhetas e peças para redes sociais e painéis de LED que prendem a atenção nos primeiros segundos.</p>
+            <button class="motion-demo" type="button" aria-pressed="false" id="motionDemo">
+              <span class="sr" id="motionRotulo">Pausar animação de exemplo</span>
+              <span class="motion-demo__palco" aria-hidden="true">
+                <span class="mo mo--circulo"></span>
+                <span class="mo mo--barra"></span>
+                <svg class="mo mo--estrela" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+                <span class="mo mo--texto"><b>prenda</b><b>a atenção</b><b>em 3s</b></span>
+              </span>
+              <span class="motion-demo__controle" aria-hidden="true"><i></i></span>
+            </button>
+          </article>
+
+          <!-- 4. Base: Estratégia -->
+          <article class="cartao cartao--base" data-revela>
+            <div class="cartao__cabeca">
+              <span class="cartao__num">Base</span>
+              <h3>Estratégia de comunicação e marketing</h3>
+            </div>
+            <p>Posicionamento, copywriting e funis que conectam tudo: a mensagem certa, para a pessoa certa, no momento em que ela está pronta para comprar.</p>
+            <ol class="funil" aria-label="Como a estratégia conecta os pilares">
+              <li><span class="funil__ico" aria-hidden="true">01</span><strong>Posicionamento</strong><small>o que você é e para quem</small></li>
+              <li><span class="funil__ico" aria-hidden="true">02</span><strong>Copywriting</strong><small>palavras que fazem agir</small></li>
+              <li><span class="funil__ico" aria-hidden="true">03</span><strong>Funis</strong><small>do primeiro clique à venda</small></li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAIXA DE IMPACTO ============ -->
+    <section class="faixa" aria-labelledby="faixa-titulo">
+      <svg class="fita fita--faixa" viewBox="0 0 1440 400" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path d="M-40 330 C 260 330, 300 70, 620 90 S 1000 340, 1480 60" />
+      </svg>
+      <div class="conteiner faixa__inner">
+        <h2 class="faixa__titulo" id="faixa-titulo" data-revela>Atendimento que <span class="marca-texto marca-texto--lilas">não dorme.</span></h2>
+        <p class="faixa__texto" data-revela>Uma automação que não tira folga, não tira férias e responde a qualquer hora.</p>
+      </div>
+      <div class="letreiro" aria-hidden="true">
+        <div class="letreiro__trilho">
+          <span>às 3h da manhã</span><svg class="estrela" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+          <span>no domingo</span><svg class="estrela" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+          <span>no feriado</span><svg class="estrela" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+          <span>em segundos</span><svg class="estrela" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+          <span>às 3h da manhã</span><svg class="estrela" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+          <span>no domingo</span><svg class="estrela" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+          <span>no feriado</span><svg class="estrela" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+          <span>em segundos</span><svg class="estrela" viewBox="0 0 24 24"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMO FUNCIONA ============ -->
+    <section class="secao passos" id="como-funciona" aria-labelledby="passos-titulo">
+      <div class="conteiner">
+        <div class="cabeca-secao">
+          <p class="rotulo" data-revela>03 // Como funciona</p>
+          <h2 class="titulo-secao" id="passos-titulo" data-revela>Do primeiro “oi” ao <span class="marca-texto">tudo no ar</span> em 4 passos.</h2>
+        </div>
+
+        <div class="passos__trilha">
+          <svg class="fita fita--passos" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M0 160 C 150 160, 160 40, 300 60 S 450 190, 600 150 S 760 30, 900 60 S 1080 170, 1200 120" />
+          </svg>
+          <svg class="fita fita--passos-v" viewBox="0 0 120 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M40 0 C 40 120, 100 160, 90 260 S 20 400, 40 500 S 110 650, 80 760 S 30 900, 50 1000" />
+          </svg>
+          <ol class="passos__lista">
+            <li class="passo" data-revela>
+              <span class="passo__num">01</span>
+              <h3>Conte sobre a sua empresa</h3>
+              <p>Uma conversa rápida para entender o seu negócio, o seu público e o que hoje mais trava as suas vendas.</p>
+            </li>
+            <li class="passo" data-revela>
+              <span class="passo__num">02</span>
+              <h3>A gente monta tudo</h3>
+              <p>Estratégia, textos, site, automação no WhatsApp e motion: a siera cuida da produção de ponta a ponta.</p>
+            </li>
+            <li class="passo" data-revela>
+              <span class="passo__num">03</span>
+              <h3>Você testa e aprova</h3>
+              <p>Você experimenta tudo antes de ir ao ar e pede os ajustes que achar necessários.</p>
+            </li>
+            <li class="passo" data-revela>
+              <span class="passo__num">04</span>
+              <h3>Tudo no ar</h3>
+              <p>Publicamos, conectamos os canais e a sua marca passa a trabalhar por você todos os dias.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFÓLIO ============ -->
+    <section class="secao portfolio" id="portfolio" aria-labelledby="portfolio-titulo">
+      <div class="conteiner">
+        <div class="cabeca-secao cabeca-secao--linha">
+          <div>
+            <p class="rotulo" data-revela>04 // Portfólio</p>
+            <h2 class="titulo-secao" id="portfolio-titulo" data-revela>Trabalhos que <span class="marca-texto">se movem.</span></h2>
+          </div>
+          <p class="cabeca-secao__apoio" data-revela>Sites, motions e conteúdo visual feitos pela siera.</p>
+        </div>
+
+        <div class="portfolio__grade">
+          <!-- Leds Bahia (computador) -->
+          <article class="projeto projeto--largo" data-revela>
+            <div class="moldura-pc">
+              <div class="moldura-pc__tela">
+                <div class="moldura-pc__barra" aria-hidden="true"><i></i><i></i><i></i><span>ledsbahia.com.br</span></div>
+                <div class="video-slot" data-video="assets/portfolio/leds-bahia.mp4" data-poster="assets/portfolio/leds-bahia.jpg" data-video-label="Navegação pelo site da Leds Bahia">
+                  <div class="placeholder">
+                    <span class="placeholder__tag">[PLACEHOLDER]</span>
+                    <span>Vídeo do site Leds Bahia</span>
+                    <small>assets/portfolio/leds-bahia.mp4</small>
+                  </div>
+                </div>
+              </div>
+              <div class="moldura-pc__base" aria-hidden="true"></div>
+            </div>
+            <div class="projeto__info">
+              <span class="projeto__tag">Site</span>
+              <h3>Leds Bahia</h3>
+              <p>Site institucional com foco em autoridade e contato rápido.</p>
+              <a class="link-seta" href="https://ledsbahia.com.br" target="_blank" rel="noopener">ledsbahia.com.br <span aria-hidden="true">↗</span><span class="sr"> (abre em nova aba)</span></a>
+            </div>
+          </article>
+
+          <!-- Leds Bahia: motion vertical do painel de LED (celular) -->
+          <article class="projeto projeto--alto" data-revela>
+            <div class="moldura-cel">
+              <div class="moldura-cel__tela">
+                <div class="video-slot" data-video="assets/portfolio/leds-bahia-motion.mp4" data-poster="assets/portfolio/leds-bahia-motion.jpg" data-video-label="Motion vertical da Leds Bahia para painel de LED">
+                  <div class="placeholder">
+                    <span class="placeholder__tag">[PLACEHOLDER]</span>
+                    <span>Motion vertical da Leds Bahia (painel de LED)</span>
+                    <small>assets/portfolio/leds-bahia-motion.mp4</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projeto__info">
+              <span class="projeto__tag">Motion · LED</span>
+              <h3>Leds Bahia</h3>
+              <p>Motion vertical para o painel de LED.</p>
+            </div>
+          </article>
+
+          <!-- Painel de LED (celular) -->
+          <article class="projeto projeto--alto" data-revela>
+            <div class="moldura-cel">
+              <div class="moldura-cel__tela">
+                <div class="video-slot" data-video="assets/portfolio/painel-led.mp4" data-poster="assets/portfolio/painel-led.jpg" data-video-label="Motions de anunciantes do painel de LED">
+                  <div class="placeholder">
+                    <span class="placeholder__tag">[PLACEHOLDER]</span>
+                    <span>Motions do painel de LED</span>
+                    <small>assets/portfolio/painel-led.mp4</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projeto__info">
+              <span class="projeto__tag">Motion · LED</span>
+              <h3>Anunciantes do painel de LED</h3>
+              <p>Peças animadas para anunciantes exibidas em painel de LED.</p>
+            </div>
+          </article>
+
+          <!-- Oxe (computador): imagem OU vídeo -->
+          <article class="projeto projeto--largo" data-revela>
+            <div class="moldura-pc">
+              <div class="moldura-pc__tela">
+                <div class="moldura-pc__barra" aria-hidden="true"><i></i><i></i><i></i><span>[endereço do site da Oxe]</span></div>
+                <div class="video-slot" data-video="assets/portfolio/oxe.mp4" data-img="assets/portfolio/oxe.jpg" data-img-alt="Site da Oxe" data-video-label="Navegação pelo site da Oxe">
+                  <div class="placeholder">
+                    <span class="placeholder__tag">[PLACEHOLDER]</span>
+                    <span>Mockup do site da Oxe (imagem ou vídeo)</span>
+                    <small>assets/portfolio/oxe.jpg ou oxe.mp4</small>
+                  </div>
+                </div>
+              </div>
+              <div class="moldura-pc__base" aria-hidden="true"></div>
+            </div>
+            <div class="projeto__info">
+              <span class="projeto__tag">Site</span>
+              <h3>Oxe</h3>
+              <p>Site com animações fluidas e foco em conversão.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DEPOIMENTOS ============ -->
+    <section class="secao depoimentos" id="depoimentos" aria-labelledby="depo-titulo">
+      <div class="conteiner">
+        <div class="cabeca-secao">
+          <p class="rotulo" data-revela>05 // Depoimentos</p>
+          <h2 class="titulo-secao" id="depo-titulo" data-revela>Quem trabalha com a siera, <span class="marca-texto">conta.</span></h2>
+        </div>
+        <div class="depoimentos__grade">
+          <figure class="depo" data-revela>
+            <span class="depo__aspas" aria-hidden="true">“</span>
+            <blockquote><p>[depoimento]</p></blockquote>
+            <figcaption><span class="depo__avatar" aria-hidden="true">[N]</span><span><strong>[nome]</strong><small>[empresa]</small></span></figcaption>
+          </figure>
+          <figure class="depo" data-revela>
+            <span class="depo__aspas" aria-hidden="true">“</span>
+            <blockquote><p>[depoimento]</p></blockquote>
+            <figcaption><span class="depo__avatar" aria-hidden="true">[N]</span><span><strong>[nome]</strong><small>[empresa]</small></span></figcaption>
+          </figure>
+          <figure class="depo" data-revela>
+            <span class="depo__aspas" aria-hidden="true">“</span>
+            <blockquote><p>[depoimento]</p></blockquote>
+            <figcaption><span class="depo__avatar" aria-hidden="true">[N]</span><span><strong>[nome]</strong><small>[empresa]</small></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="secao contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="conteiner contato__grade">
+        <div class="contato__info">
+          <p class="rotulo" data-revela>06 // Contato</p>
+          <h2 class="titulo-secao" id="contato-titulo" data-revela>Vamos conversar sobre <span class="marca-texto">a sua marca?</span></h2>
+          <p data-revela>Preencha os campos e a mensagem chega pronta no nosso WhatsApp. É só tocar em enviar.</p>
+          <ul class="contato__canais" data-revela>
+            <li>
+              <span class="contato__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg></span>
+              <span><small>WhatsApp</small><a data-wa="Olá, siera! Vim pelo site." href="#contato" target="_blank" rel="noopener">[SEU WHATSAPP]</a></span>
+            </li>
+            <li>
+              <span class="contato__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.3-3.1a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg></span>
+              <span><small>Instagram</small><a href="https://instagram.com/[@SEU PERFIL]" target="_blank" rel="noopener">[@SEU PERFIL]</a></span>
+            </li>
+            <li>
+              <span class="contato__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v.5l8 5 8-5V6H4Zm16 2.8-8 5-8-5V18h16V8.8Z"/></svg></span>
+              <span><small>E-mail</small><a href="mailto:[SEU E-MAIL]">[SEU E-MAIL]</a></span>
+            </li>
+            <li>
+              <span class="contato__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7Zm0 4.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"/></svg></span>
+              <span><small>Onde estamos</small>Baixo Sul da Bahia</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="formulario" id="formulario" novalidate data-revela>
+          <div class="campo">
+            <label for="f-nome">Seu nome</label>
+            <input id="f-nome" name="nome" type="text" autocomplete="name" required placeholder="Como podemos te chamar?">
+            <span class="campo__erro" id="f-nome-erro" aria-live="polite"></span>
+          </div>
+          <div class="campo">
+            <label for="f-empresa">Empresa <small>(opcional)</small></label>
+            <input id="f-empresa" name="empresa" type="text" autocomplete="organization" placeholder="Nome da sua empresa">
+          </div>
+          <div class="campo">
+            <label for="f-whats">Seu WhatsApp</label>
+            <input id="f-whats" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(75) 9 0000-0000">
+            <span class="campo__erro" id="f-whats-erro" aria-live="polite"></span>
+          </div>
+          <fieldset class="campo campo--opcoes">
+            <legend>Tenho interesse em</legend>
+            <div class="opcoes">
+              <label><input type="radio" name="interesse" value="Automação no WhatsApp" checked><span>Automação no WhatsApp</span></label>
+              <label><input type="radio" name="interesse" value="Site"><span>Site</span></label>
+              <label><input type="radio" name="interesse" value="Motion"><span>Motion</span></label>
+              <label><input type="radio" name="interesse" value="Estratégia"><span>Estratégia</span></label>
+              <label><input type="radio" name="interesse" value="Ainda não sei"><span>Ainda não sei</span></label>
+            </div>
+          </fieldset>
+          <button class="botao botao--bordo botao--cheio" type="submit">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+          <p class="formulario__nota">Abrimos o WhatsApp com a sua mensagem pronta. Nada é enviado sem você tocar em enviar.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta-final" aria-labelledby="cta-titulo">
+      <svg class="fita fita--cta" viewBox="0 0 1440 500" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path d="M1480 40 C 1150 40, 1100 420, 760 400 S 300 80, -40 460" />
+      </svg>
+      <div class="conteiner cta-final__inner">
+        <svg class="estrela cta-final__estrela" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12.9 7.2 16.8 11.1 24 12 16.8 12.9 12.9 16.8 12 24 11.1 16.8 7.2 12.9 0 12 7.2 11.1 11.1 7.2 12 0Z"/></svg>
+        <h2 id="cta-titulo" data-revela>Pronto para unir estratégia, movimento e inteligência artificial na sua marca?</h2>
+        <a class="botao botao--creme" data-wa="Olá, siera! Quero unir estratégia, movimento e IA na minha marca." href="#contato" target="_blank" rel="noopener" data-revela>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+          Chamar a siera no WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="rodape">
+    <div class="conteiner rodape__grade">
+      <div class="rodape__marca">
+        <img src="assets/img/logo-siera.png" alt="siera, Comunicação e Marketing" width="1039" height="353" loading="lazy">
+        <p>O que a sua empresa será, a gente constrói.</p>
+      </div>
+      <nav class="rodape__links" aria-label="Links do rodapé">
+        <a href="#quem-somos">Quem somos</a>
+        <a href="#solucoes">Soluções</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="rodape__social">
+        <a href="https://instagram.com/[@SEU PERFIL]" target="_blank" rel="noopener">Instagram</a>
+        <a data-wa="Olá, siera! Vim pelo site." href="#contato" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:[SEU E-MAIL]">E-mail</a>
+      </div>
+    </div>
+    <div class="conteiner rodape__base">
+      <span>© 2026 siera · Comunicação e Marketing</span>
+      <span>Baixo Sul da Bahia</span>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante de WhatsApp -->
+  <a class="wa-flutuante" id="waFlutuante" data-wa="Olá, siera! Vim pelo site e quero conversar." href="#contato" target="_blank" rel="noopener" aria-label="Conversar com a siera no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
